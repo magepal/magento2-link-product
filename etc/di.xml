@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © MagePal, LLC. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <type name="Magento\Catalog\Model\Product\CopyConstructor\Composite">
+        <arguments>
+            <argument name="constructors" xsi:type="array">
+                <item name="accessory" xsi:type="string">MagePal\LinkProduct\Model\Product\CopyConstructor\Accessory</item>
+            </argument>
+        </arguments>
+    </type>
+    <type name="Magento\Catalog\Model\Product\LinkTypeProvider">
+        <arguments>
+            <argument name="linkTypes" xsi:type="array">
+                <item name="accessory" xsi:type="const">MagePal\LinkProduct\Model\Product\Link::LINK_TYPE_ACCESSORY</item>
+            </argument>
+        </arguments>
+    </type>
+    <type name="Magento\Catalog\Model\ProductLink\CollectionProvider">
+        <arguments>
+            <argument name="providers" xsi:type="array">
+                <item name="accessory" xsi:type="object">MagePal\LinkProduct\Model\ProductLink\CollectionProvider\Accessory</item>
+            </argument>
+        </arguments>
+    </type>
+</config>
