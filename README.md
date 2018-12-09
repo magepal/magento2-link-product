@@ -30,7 +30,7 @@ Create a new product accessory relationship in additional to the default Up-sell
 
 #### Step 1
 
-##### Manually  (not recommended)
+##### Manually
  * Download the extension
  * Unzip the file
  * Create a folder {Magento 2 root}/app/code/MagePal/LinkProduct
