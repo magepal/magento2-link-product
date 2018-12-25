@@ -1,6 +1,6 @@
 <a href="http://www.magepal.com" title="Top Magento 2 Extension Provider" ><img src="https://image.ibb.co/dHBkYH/Magepal_logo.png" width="100" align="right" alt="Magento Extension Provider" /></a>
 
-## Custom Product Relation Sample Extension for Magento 2.2.x (with zero class rewrite or hacks)
+## Custom Product Relation Sample Extension for Magento 2.2.x and 2.3.x (with zero class rewrite or hacks)
 
 
 Create a new product accessory relationship in additional to the default Up-sell products, Related products, and Cross-sell products options available in Magento.
@@ -26,13 +26,11 @@ Create a new product accessory relationship in additional to the default Up-sell
     //return product ids
     $accessoryItemIds = $this->accessory->getAccessoryProductIds($product);
     
-    
-
 ````
 
 #### Step 1
 
-##### Manually  (not recommended)
+##### Manually
  * Download the extension
  * Unzip the file
  * Create a folder {Magento 2 root}/app/code/MagePal/LinkProduct
