@@ -27,4 +27,8 @@
             </argument>
         </arguments>
     </type>
+    <type name="\Magento\CatalogImportExport\Model\Import\Product">
+        <plugin name="addLinkType"
+                type="\MagePal\LinkProduct\Plugin\CatalogImportExport\Model\Import\Product"/>
+    </type>
 </config>

@@ -48,6 +48,10 @@ Contribution
 ---
 Want to contribute to this extension? The quickest way is to open a [pull request on GitHub](https://help.github.com/articles/using-pull-requests).
 
+Importing via CSV or 3rd party extensions
+---
+
+To import via CSV, you need to have the [a patch applied to the core](https://github.com/magento/magento2/pull/21230/commits/0846e9aed7040659e7ce3e109eb91df3f5fdfb7e.patch) (until merged to Magento 2).
 
 Support
 ---
