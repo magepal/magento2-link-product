@@ -4,8 +4,12 @@
     "homepage": "https://www.magepal.com/",
     "support": {
         "email": "support@magepal.com",
-        "issues": "https://github.com/magepal/magento2-base/issues/"
+        "issues": "https://github.com/magepal/magento2-link-product/issues"
     },
+    "license": [
+        "OSL-3.0",
+        "AFL-3.0"
+    ],
     "authors": [
         {
             "name": "Renon Stewart",
