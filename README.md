@@ -30,6 +30,12 @@ Create a new product accessory relationship in additional to the default Up-sell
 
 #### Step 1
 
+##### Using Composer (recommended)
+
+```
+composer require magepal/link-product
+```
+
 ##### Manually
  * Download the extension
  * Unzip the file
