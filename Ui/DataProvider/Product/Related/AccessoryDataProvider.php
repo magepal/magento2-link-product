@@ -8,6 +8,10 @@ namespace MagePal\LinkProduct\Ui\DataProvider\Product\Related;
 
 use Magento\Catalog\Ui\DataProvider\Product\Related\AbstractDataProvider;
 
+/**
+ * Class AccessoryDataProvider
+ * @package MagePal\LinkProduct\Ui\DataProvider\Product\Related
+ */
 class AccessoryDataProvider extends AbstractDataProvider
 {
     /**

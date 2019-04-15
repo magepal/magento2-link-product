@@ -6,11 +6,22 @@
 
 namespace MagePal\LinkProduct\Model\ProductLink\CollectionProvider;
 
-class Accessory implements \Magento\Catalog\Model\ProductLink\CollectionProviderInterface
+use Magento\Catalog\Model\Product;
+use Magento\Catalog\Model\ProductLink\CollectionProviderInterface;
+
+/**
+ * Class Accessory
+ * @package MagePal\LinkProduct\Model\ProductLink\CollectionProvider
+ */
+class Accessory implements CollectionProviderInterface
 {
     /** @var \MagePal\LinkProduct\Model\Accessory */
     protected $accessoryModel;
 
+    /**
+     * Accessory constructor.
+     * @param \MagePal\LinkProduct\Model\Accessory $accessoryModel
+     */
     public function __construct(
         \MagePal\LinkProduct\Model\Accessory $accessoryModel
     ) {
@@ -20,7 +31,7 @@ class Accessory implements \Magento\Catalog\Model\ProductLink\CollectionProvider
     /**
      * {@inheritdoc}
      */
-    public function getLinkedProducts(\Magento\Catalog\Model\Product $product)
+    public function getLinkedProducts(Product $product)
     {
         return (array) $this->accessoryModel->getAccessoryProducts($product);
     }

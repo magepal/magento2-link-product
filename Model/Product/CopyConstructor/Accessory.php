@@ -6,16 +6,24 @@
 
 namespace MagePal\LinkProduct\Model\Product\CopyConstructor;
 
-class Accessory implements \Magento\Catalog\Model\Product\CopyConstructorInterface
+use Magento\Catalog\Model\Product;
+use Magento\Catalog\Model\Product\CopyConstructorInterface;
+use Magento\Catalog\Model\Product\Link;
+
+/**
+ * Class Accessory
+ * @package MagePal\LinkProduct\Model\Product\CopyConstructor
+ */
+class Accessory implements CopyConstructorInterface
 {
     /**
      * Build product links
      *
-     * @param \Magento\Catalog\Model\Product $product
-     * @param \Magento\Catalog\Model\Product $duplicate
+     * @param Product $product
+     * @param Product $duplicate
      * @return void
      */
-    public function build(\Magento\Catalog\Model\Product $product, \Magento\Catalog\Model\Product $duplicate)
+    public function build(Product $product, Product $duplicate)
     {
         $data = [];
         $attributes = [];
@@ -27,10 +35,11 @@ class Accessory implements \Magento\Catalog\Model\Product\CopyConstructorInterfa
                 $attributes[] = $attribute['code'];
             }
         }
-        /** @var \Magento\Catalog\Model\Product\Link $link  */
+        /** @var Link $link  */
         foreach ($product->getAccessoryLinkCollection() as $link) {
             $data[$link->getLinkedProductId()] = $link->toArray($attributes);
         }
+
         $duplicate->setAccessoryLinkData($data);
     }
 }

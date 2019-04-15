@@ -6,7 +6,16 @@
 
 namespace MagePal\LinkProduct\Model;
 
-class Accessory extends \Magento\Framework\DataObject
+use Magento\Catalog\Model\Product;
+use Magento\Catalog\Model\ResourceModel\Product\Link\Collection;
+use Magento\Framework\DataObject;
+use MagePal\LinkProduct\Model\Product\Link;
+
+/**
+ * Class Accessory
+ * @package MagePal\LinkProduct\Model
+ */
+class Accessory extends DataObject
 {
     /**
      * Product link instance
@@ -15,8 +24,12 @@ class Accessory extends \Magento\Framework\DataObject
      */
     protected $linkInstance;
 
+    /**
+     * Accessory constructor.
+     * @param Link $productLink
+     */
     public function __construct(
-        \MagePal\LinkProduct\Model\Product\Link $productLink
+        Link $productLink
     ) {
         $this->linkInstance = $productLink;
     }
@@ -34,10 +47,10 @@ class Accessory extends \Magento\Framework\DataObject
     /**
      * Retrieve array of Accessory products
      *
-     * @param \Magento\Catalog\Model\Product $currentProduct
+     * @param Product $currentProduct
      * @return array
      */
-    public function getAccessoryProducts(\Magento\Catalog\Model\Product $currentProduct)
+    public function getAccessoryProducts(Product $currentProduct)
     {
         if (!$this->hasAccessoryProducts()) {
             $products = [];
@@ -53,10 +66,10 @@ class Accessory extends \Magento\Framework\DataObject
     /**
      * Retrieve accessory products identifiers
      *
-     * @param \Magento\Catalog\Model\Product $currentProduct
+     * @param Product $currentProduct
      * @return array
      */
-    public function getAccessoryProductIds(\Magento\Catalog\Model\Product $currentProduct)
+    public function getAccessoryProductIds(Product $currentProduct)
     {
         if (!$this->hasAccessoryProductIds()) {
             $ids = [];
@@ -71,10 +84,10 @@ class Accessory extends \Magento\Framework\DataObject
     /**
      * Retrieve collection accessory product
      *
-     * @param \Magento\Catalog\Model\Product $currentProduct
+     * @param Product $currentProduct
      * @return \Magento\Catalog\Model\ResourceModel\Product\Link\Product\Collection
      */
-    public function getAccessoryProductCollection(\Magento\Catalog\Model\Product $currentProduct)
+    public function getAccessoryProductCollection(Product $currentProduct)
     {
         $collection = $this->getLinkInstance()->useAccessoryLinks()->getProductCollection()->setIsStrongMode();
         $collection->setProduct($currentProduct);
@@ -84,10 +97,10 @@ class Accessory extends \Magento\Framework\DataObject
     /**
      * Retrieve collection accessory link
      *
-     * @param \Magento\Catalog\Model\Product $currentProduct
-     * @return \Magento\Catalog\Model\ResourceModel\Product\Link\Collection
+     * @param Product $currentProduct
+     * @return Collection
      */
-    public function getAccessoryLinkCollection(\Magento\Catalog\Model\Product $currentProduct)
+    public function getAccessoryLinkCollection(Product $currentProduct)
     {
         $collection = $this->getLinkInstance()->useAccessoryLinks()->getLinkCollection();
         $collection->setProduct($currentProduct);

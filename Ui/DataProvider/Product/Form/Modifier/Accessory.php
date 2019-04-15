@@ -6,9 +6,14 @@
 
 namespace MagePal\LinkProduct\Ui\DataProvider\Product\Form\Modifier;
 
+use Magento\Catalog\Ui\DataProvider\Product\Form\Modifier\Related;
 use Magento\Ui\Component\Form\Fieldset;
 
-class Accessory extends \Magento\Catalog\Ui\DataProvider\Product\Form\Modifier\Related
+/**
+ * Class Accessory
+ * @package MagePal\LinkProduct\Ui\DataProvider\Product\Form\Modifier
+ */
+class Accessory extends Related
 {
     const DATA_SCOPE_ACCESSORY = 'accessory';
     /**
@@ -39,10 +44,10 @@ class Accessory extends \Magento\Catalog\Ui\DataProvider\Product\Form\Modifier\R
                                 'componentType' => Fieldset::NAME,
                                 'dataScope' => static::DATA_SCOPE,
                                 'sortOrder' => $this->getNextGroupSortOrder(
-                                        $meta,
-                                        self::$previousGroup,
-                                        self::$sortOrder
-                                    ),
+                                    $meta,
+                                    self::$previousGroup,
+                                    self::$sortOrder
+                                ),
                             ],
                         ],
                     ],
