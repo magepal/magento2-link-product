@@ -2,7 +2,6 @@
 
 namespace MagePal\LinkProduct\Plugin\CatalogImportExport\Model\Import;
 
-use Magento\CatalogImportExport\Model\Import\Product;
 use MagePal\LinkProduct\Model\Product\Link;
 
 /**
@@ -18,7 +17,7 @@ class Product
      * @param $result
      * @return mixed
      */
-    public function afterGetLinkNameToId(Product $subject, $result)
+    public function afterGetLinkNameToId(\Magento\CatalogImportExport\Model\Import\Product $subject, $result)
     {
         $result['_accessory_'] = Link::LINK_TYPE_ACCESSORY;
         return $result;
