@@ -2,6 +2,7 @@
 /**
  * Copyright © MagePal LLC. All rights reserved.
  * See COPYING.txt for license details.
+ * http://www.magepal.com | support@magepal.com
  */
 
 namespace MagePal\LinkProduct\Model\Product\CopyConstructor;
@@ -10,10 +11,6 @@ use Magento\Catalog\Model\Product;
 use Magento\Catalog\Model\Product\CopyConstructorInterface;
 use Magento\Catalog\Model\Product\Link;
 
-/**
- * Class Accessory
- * @package MagePal\LinkProduct\Model\Product\CopyConstructor
- */
 class Accessory implements CopyConstructorInterface
 {
     /**

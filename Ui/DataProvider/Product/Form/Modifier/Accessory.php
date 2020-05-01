@@ -2,6 +2,7 @@
 /**
  * Copyright © MagePal LLC. All rights reserved.
  * See COPYING.txt for license details.
+ * http://www.magepal.com | support@magepal.com
  */
 
 namespace MagePal\LinkProduct\Ui\DataProvider\Product\Form\Modifier;
@@ -9,10 +10,6 @@ namespace MagePal\LinkProduct\Ui\DataProvider\Product\Form\Modifier;
 use Magento\Catalog\Ui\DataProvider\Product\Form\Modifier\Related;
 use Magento\Ui\Component\Form\Fieldset;
 
-/**
- * Class Accessory
- * @package MagePal\LinkProduct\Ui\DataProvider\Product\Form\Modifier
- */
 class Accessory extends Related
 {
     const DATA_SCOPE_ACCESSORY = 'accessory';

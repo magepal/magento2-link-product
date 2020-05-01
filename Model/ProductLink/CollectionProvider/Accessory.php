@@ -2,6 +2,7 @@
 /**
  * Copyright © MagePal LLC. All rights reserved.
  * See COPYING.txt for license details.
+ * http://www.magepal.com | support@magepal.com
  */
 
 namespace MagePal\LinkProduct\Model\ProductLink\CollectionProvider;
@@ -9,10 +10,6 @@ namespace MagePal\LinkProduct\Model\ProductLink\CollectionProvider;
 use Magento\Catalog\Model\Product;
 use Magento\Catalog\Model\ProductLink\CollectionProviderInterface;
 
-/**
- * Class Accessory
- * @package MagePal\LinkProduct\Model\ProductLink\CollectionProvider
- */
 class Accessory implements CollectionProviderInterface
 {
     /** @var \MagePal\LinkProduct\Model\Accessory */

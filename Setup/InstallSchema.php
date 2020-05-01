@@ -2,6 +2,7 @@
 /**
  * Copyright © MagePal LLC. All rights reserved.
  * See COPYING.txt for license details.
+ * http://www.magepal.com | support@magepal.com
  */
 
 namespace MagePal\LinkProduct\Setup;
@@ -12,10 +13,6 @@ use Magento\Framework\Setup\SchemaSetupInterface;
 use MagePal\LinkProduct\Model\Product\Link;
 use MagePal\LinkProduct\Ui\DataProvider\Product\Form\Modifier\Accessory;
 
-/**
- * Class InstallSchema
- * @package MagePal\LinkProduct\Setup
- */
 class InstallSchema implements InstallSchemaInterface
 {
 

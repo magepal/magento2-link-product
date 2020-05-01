@@ -2,6 +2,9 @@
 
 ## Custom Product Relation Sample Extension for Magento 2.2.x and 2.3.x (with zero class rewrite or hacks)
 
+[![Total Downloads](https://poser.okvpn.org/magepal/magento2-link-product/downloads)](https://packagist.org/packages/magepal/magento2-link-product)
+[![Latest Stable Version](https://poser.okvpn.org/magepal/magento2-link-product/v/stable)](https://packagist.org/packages/magepal/magento2-link-product)
+
 
 Create a new product accessory relationship in additional to the default Up-sell products, Related products, and Cross-sell products options available in Magento.
 

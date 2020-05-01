@@ -1,0 +1,58 @@
+<?xml version="1.0" ?>
+<!--
+/**
+ * Copyright © MagePal LLC. All rights reserved.
+ * See COPYING.txt for license details.
+ * https://www.magepal.com | support@magepal.com
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+	<system>
+		<tab id="magepal" sortOrder="400" translate="label">
+			<label>MagePal</label>
+		</tab>
+		<section id="magepal_link_products" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="5" translate="label">
+			<label>Link Products</label>
+			<tab>magepal</tab>
+			<resource>MagePal_LinkProduct::config_magepal_link_product</resource>
+			<group id="about" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="0" translate="label">
+				<attribute type="expanded">1</attribute>
+				<label>About MagePal Link Products</label>
+				<comment><![CDATA[
+                    <div id="magepal-info">
+                        Copyright © 2020 <a href="https://www.magepal.com/magento2/extensions.html?utm_source=reindex&utm_medium=admin" target="_blank">MagePal, LLC</a>
+                        <a href="https://github.com/magepal/magento2-link-product" target="_blank">Documentation</a>
+                        <a href="https://www.magepal.com/?utm_source=reindex&utm_medium=admin#support">Support</a>
+                        <a href="https://www.magepal.com/magento2/extensions.html?utm_source=reindex&utm_medium=admin" target="_blank">More Extensions</a>
+                    </div>
+                    <hr style="border-top: 1px solid #e3e3e3" />
+                    <style>
+                        #magepal-info a {
+                            font-weight: bold;
+                            border-left: 2px solid #e3e3e3;
+                            padding-left:10px;
+                            padding-right:10px;
+                            color: #ef7e1e;
+                        }
+
+                        #magepal-info a:first-child {
+                            padding-left: 5px;
+                            border-left: none;
+                        }
+
+                        #magepal-info {
+                            padding-bottom: 5px;
+                        }
+                     </style>]]></comment>
+				<field id="module_version" translate="label" type="label" sortOrder="0" showInDefault="1" showInWebsite="0" showInStore="0">
+					<label>Module Version</label>
+					<frontend_model>MagePal\LinkProduct\Block\Adminhtml\System\Config\Form\Module\Version</frontend_model>
+				</field>
+				<field id="composer_version" translate="label" type="label" sortOrder="1" showInDefault="1" showInWebsite="0" showInStore="0">
+					<label>Composer Version</label>
+					<frontend_model>MagePal\LinkProduct\Block\Adminhtml\System\Config\Form\Composer\Version</frontend_model>
+				</field>
+			</group>
+		</section>
+	</system>
+</config>
