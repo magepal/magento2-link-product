@@ -10,7 +10,7 @@ Create a new product accessory relationship in additional to the default Up-sell
 
 ![Magento Custom Product Relation](https://image.ibb.co/mPXauq/magento-2-link-product.png)
 
-
+Please Note: Our extension perform all of the backend logic of relating the various product, you will need to design the frontend component and where to place these products
 #### Usage
 
 ````
@@ -86,4 +86,4 @@ Magento 2 Extensions
 - [Order Confirmation Page Miscellaneous Scripts](https://www.magepal.com/magento2/extensions/order-confirmation-miscellaneous-scripts-for-magento-2.html)
 - [HTML Minifier for Magento2](https://www.magepal.com/magento2/extensions/html-minifier.html)
 
-© MagePal LLC. | [www.magepal.com](http:/www.magepal.com)
+© MagePal LLC. | [www.magepal.com](https://www.magepal.com)
