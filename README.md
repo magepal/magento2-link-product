@@ -1,4 +1,4 @@
-<a href="http://www.magepal.com" title="Top Magento 2 Extension Provider" ><img src="https://image.ibb.co/dHBkYH/Magepal_logo.png" width="100" align="right" alt="Magento Extension Provider" /></a>
+<a href="https://www.magepal.com" title="Top Magento 2 Extension Provider" ><img src="https://image.ibb.co/dHBkYH/Magepal_logo.png" width="100" align="right" alt="Magento Extension Provider" /></a>
 
 ## Custom Product Relation Sample Extension for Magento 2.2.x and 2.3.x (with zero class rewrite or hacks)
 
